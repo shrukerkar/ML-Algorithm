@@ -5,6 +5,9 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 from sklearn.naive_bayes import GaussianNB
 from sklearn.metrics import accuracy_score
+
+import seaborn as sns
+
 import matplotlib
 # matplotlib.use("agg")
 #matplotlib.use("TkAgg")
@@ -70,8 +73,8 @@ y1=iris.target
 #print(y1)
 #print(y1.shape)
 model.fit(X1,y1)
-model.coef_
-model.intercept_
+#model.coef_
+#model.intercept_
 Xfit=np.random.randint(8,size=(150))
 Xfit.astype(float)
 Xfit=Xfit[:,np.newaxis]
